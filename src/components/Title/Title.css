@@ -1,0 +1,33 @@
+.out{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    border-radius: 20px;
+    background-color: rgb(230,220,224) ;
+     /* justify-content: space-between; */
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px ;
+
+    /* color: white; */
+   width: 35%;
+   border: solid 1px rgb(232,66,50) ;
+   box-shadow: 0px 2px 2px  rgb(232,66,50);
+   font-size: 14px;
+   padding: 20px;
+   
+}
+@media (max-width:400px) 
+{
+    .title{
+        width: 60%; 
+    }
+}
+h3{
+    margin-top: 5px;
+    margin: 0px;
+    
+
+}
