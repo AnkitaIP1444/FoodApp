@@ -58,17 +58,26 @@ hr {
     /* border-top: 1px dashed red; */
     border-top: 1px dotted rgb(232, 66, 50);
 }
+
 .nothing {
     color: rgb(232, 66, 50);
 }
-.dish {
-    margin-left: 400px;
-}
+
 
 .dish1 {
-    margin-left: 450px;
+    text-align: end;
+    padding: 5px;
 }
-.cart{
-    
+
+.cart {
+
     margin: 5px;
+}
+
+.Demo_Wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.PAPA{
+padding: 10px;
 }

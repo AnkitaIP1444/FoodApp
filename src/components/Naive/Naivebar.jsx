@@ -12,7 +12,7 @@ const Naivebar = (props) => {
     return item.price * item.quantity
 
   })
-  console.log(Total,"helllllll")
+  console.log(Total, "helllllll")
   const itemTotal = Total.reduce((item, amount) => {
     return item + amount
   })
@@ -53,33 +53,35 @@ const Naivebar = (props) => {
 
             {quantity === 0 && <div className='nothing'>Oops!Add Something</div>}
             <h4>Your Reciept</h4>
-            <hr/>
+            <hr />
             {props.menu.map((item) => item.quantity > 0 ? (
-              <div  key={item.id}>
-                <div>
-                  
-                 {item.dish} 
-                 <span className='dish'></span>
-                  
-                  <button className='add' onClick={() => { props.addToCart(item) }} >+</button>
+              <div key={item.id}>
+                <div className='PAPA'>
+                  <div className="Demo_Wrapper">
+                    <div className="">
+                      {item.dish}</div>
+                    <div className="">
+                      <button className='add' onClick={() => { props.addToCart(item) }} >+</button>
 
-                 <span className='gap'>{item.quantity}</span> 
+                      <span className='gap'>{item.quantity}</span>
 
-                  <button className='add' onClick={() => { props.addToCart(item, true) }} >-</button>
-                 
+                      <button className='add' onClick={() => { props.addToCart(item, true) }} >-</button>
+                    </div>
+                  </div>
+
                   <div className='dish1'>{item.price}</div>
-                  
-                  
+
+
 
                   {/* <div>{itemsPrice}</div> */}
                 </div>
-                <hr/>
+                <hr />
               </div>
 
 
             ) : null)
             }
-            
+
             <h4>Total price</h4>
             <span ><strong>{itemTotal}</strong></span>
 
